@@ -1,13 +1,21 @@
-<html>
-  <head>
-    <title>reCAPTCHA demo: Simple page</title>
-     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-  </head>
-  <body>
-    <form action="?" method="POST">
-      <div class="g-recaptcha" data-sitekey="6Lcy5bMUAAAAAAtx8QU4j_wLyYYyJS5Kx3W8rlab"></div>
-      <br/>
-      <input type="submit" value="Submit">
-    </form>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://www.google.com/recaptcha/api.js?render=6LfP37MUAAAAALe9La_9u9u67KPpN4MFy-K34r48"></script>
+        <script>
+        grecaptcha.ready(function() {
+            console.log(" CSK gre captcha working ", grecaptcha, grecaptcha.execute);
+            grecaptcha.execute('6LfP37MUAAAAALe9La_9u9u67KPpN4MFy-K34r48', {action: 'login'}).then(function(token) {
+              
+            })
+        });
+        </script>
+</head>
+<body>
+    
+</body>
 </html>
