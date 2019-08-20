@@ -1,1 +1,21 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://www.google.com/recaptcha/api.js?render=6LfP37MUAAAAALe9La_9u9u67KPpN4MFy-K34r48"></script>
+        <script>
+        grecaptcha.ready(function() {
+            console.log(" CSK gre captcha working ", grecaptcha, grecaptcha.execute);
+            grecaptcha.execute('6LfP37MUAAAAALe9La_9u9u67KPpN4MFy-K34r48', {action: 'homepage'}).then(function(token) {
+              
+            })
+        });
+        </script>
+</head>
+<body>
+    
+</body>
+</html>
